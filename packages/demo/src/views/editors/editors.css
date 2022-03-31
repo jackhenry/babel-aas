@@ -1,0 +1,27 @@
+.CodeMirror {
+  height: 100% !important;
+  @apply !font-mono;
+}
+
+.CodeMirror-wrap pre {
+  word-break: break-word !important;
+}
+
+.CodeMirror-gutters {
+  @apply !bg-override-bg/25;
+}
+
+@media only screen and (max-width: 768px) {
+  #ui-container {
+    flex-direction: column-reverse;
+  }
+
+  #editors-controls-wrapper {
+    height: 100%;
+    flex-direction: column;
+  }
+  
+  .CodeMirror:first-of-type {
+    @apply border-b-4 border-override-bg border-solid;
+  }
+}

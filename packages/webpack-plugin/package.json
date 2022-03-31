@@ -1,0 +1,38 @@
+{
+  "name": "@babel-aas/webpack-plugin",
+  "license": "MIT",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "yarn build -- -w",
+    "build": "cross-env NODE_ENV=production babel src -d dist --copy-files",
+    "test:only": "cross-env NODE_ENV=test jest",
+    "test:watch": "npm run test:only -- --watch",
+    "test:coverage": "npm run test:only -- --collectCoverageFrom=\"src/**/*.js\" --coverage",
+    "test:manual": "npm run build && webpack serve ./test/manual/src/index.js --open --config test/manual/webpack.config.js",
+    "test": "npm run test:coverage",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@webpack-contrib/eslint-config-webpack": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "memfs": "^3.4.1",
+    "webpack": "^5.70.0"
+  },
+  "peerDependencies": {
+    "webpack": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "schema-utils": "^4.0.0"
+  }
+}

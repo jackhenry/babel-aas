@@ -19,7 +19,7 @@
     "examples": "yarn workspace @babel-aas/examples",
     "demo": "yarn workspace @babel-aas/demo",
     "pages:clean": "rm -r ./docs/*",
-    "pages": "yarn pages:clean && cp -r ./packages/demo/build/* ./docs"
+    "pages": "yarn demo build && yarn pages:clean && cp -r ./packages/demo/build/* ./docs"
   },
   "devDependencies": {}
 }

@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "extends": [
+    "@webpack-contrib/eslint-config-webpack",
+    "prettier"
+  ],
+  "ignorePatterns": [
+    "dist",
+    "test/fixtures",
+    "node_modules"
+  ],
+  "rules": {
+    "semi": "error",
+    "quotes": "error"
+  }
+}

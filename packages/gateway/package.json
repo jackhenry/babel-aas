@@ -1,0 +1,12 @@
+{
+  "name": "@babel-aas/gateway",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env BAAS_SERVICE_URL=http://localhost:9002 uvicorn server.main:server --reload --host 0.0.0.0 --port 9001",
+    "deps": "pip install -r requirements.txt"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
