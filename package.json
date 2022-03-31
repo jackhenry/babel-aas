@@ -1,0 +1,25 @@
+{
+  "name": "babel-aas",
+  "private": "true",
+  "workspaces": [
+    "packages/webpack-plugin",
+    "packages/core",
+    "packages/gateway",
+    "packages/examples",
+    "packages/demo"
+  ],
+  "version": "0.0.1",
+  "description": "Babel as a service",
+  "author": "Jack Henry",
+  "license": "MIT",
+  "scripts": {
+    "core": "yarn workspace @babel-aas/core",
+    "gateway": "yarn workspace @babel-aas/gateway",
+    "plugin": "yarn workspace @babel-aas/webpack-plugin",
+    "examples": "yarn workspace @babel-aas/examples",
+    "demo": "yarn workspace @babel-aas/demo",
+    "pages:clean": "rm -r ./docs/*",
+    "pages": "yarn pages:clean && cp -r ./packages/demo/build/* ./docs"
+  },
+  "devDependencies": {}
+}
