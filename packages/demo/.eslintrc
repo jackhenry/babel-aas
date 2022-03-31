@@ -12,7 +12,10 @@
     "sourceType": "module"
   },
   "ignorePatterns": [
-    "build/*"
+    "build/*",
+    "postcss.config.js",
+    "preact.config.js",
+    "tailwind.config.js"
   ],
   "rules": {
     "semi": "error",
