@@ -60,7 +60,7 @@ const Editor: FunctionalComponent<EditorProps> = ({ isInput }) => {
   }
 
   return (
-    <div class="h-full flex flex-col basis-1/2 justify-stretch">
+    <div class="h-full flex flex-col basis-1/2 justify-stretch shrink-0">
       <div class="h-full w-full">
         <textarea ref={ref} />
       </div>
