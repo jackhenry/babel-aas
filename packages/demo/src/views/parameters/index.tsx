@@ -24,7 +24,7 @@ const ParametersView: FunctionalComponent = () => {
   }, [isShown]);
 
   return (
-    <div id="parameters-container" class="md:h-full !h-full max-w-[18rem] flex basis-auto font-mono bg-override-bg" ref={ref}>
+    <div id="parameters-container" class="md:h-full !h-full max-w-[18rem] flex basis-auto font-mono bg-override-bg mb-4" ref={ref}>
       <div class="w-full flex flex-col gap-y-4 px-1">
         <AboutView />
         <Presets />

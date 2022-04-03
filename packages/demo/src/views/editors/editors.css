@@ -12,8 +12,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .CodeMirror {
+    min-height: 450px;  
+  }
+
   #ui-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   #editors-controls-wrapper {
