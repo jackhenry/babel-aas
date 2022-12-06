@@ -37,7 +37,7 @@ const Header: FunctionalComponent = () => {
               settings
             </span>
           </button>
-          <a href="https://www.jackhenry.io#projects">
+          <a href="https://github.com/jackhenry/babel-aas">
             <GithubIcon classes="!fill-override-fg/75 hover:!fill-override-blue w-auto h-6" />
           </a>
         </div>
