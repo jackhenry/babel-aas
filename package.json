@@ -17,7 +17,7 @@
     "gateway": "yarn workspace @babel-aas/gateway",
     "plugin": "yarn workspace @babel-aas/webpack-plugin",
     "examples": "yarn workspace @babel-aas/examples",
-    "demo": "yarn workspace @babel-aas/demo",
+    "demo": "NODE_OPTIONS=--openssl-legacy-provider yarn workspace @babel-aas/demo",
     "pages:clean": "rm -r ./docs/*",
     "pages": "yarn demo build && yarn pages:clean && cp -r ./packages/demo/build/* ./docs"
   },
