@@ -11,5 +11,5 @@ COPY ./server ./server
 
 RUN pip install -r requirements.txt
 
-ENV BAAS_SERVICE_URL=http://baas-core:8080
+ENV BAAS_SERVICE_URL=https://baas-core-6gjtlllbna-uc.a.run.app
 CMD ["uvicorn", "--host", "0.0.0.0", "--port", "8080", "server.main:server"]
